@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ocean-dark: #0a192f;
+    --color-ocean-depth: #071322;
+    --color-navy-deep: #0b1a2d;
+    --color-parchment: #ebdcb9;
+    --color-parchment-dark: #d9c79e;
+    --color-warm-cream: #f4f1de;
+    --color-muted-cream: #ece4d0;
+    --color-antique-brass: #c5a059;
+    --color-muted-gold: #d4af37;
+    --color-accent-gold: #e5c158;
+    --color-wood-dark: #1a1008;
+    --color-wood-medium: #2c1d11;
+  }
+
+  body {
+    background-color: #081220;
+    color: #f4f1de;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Typography & Utility Classes */
+.font-serif-title {
+  font-family: 'Playfair Display', 'Cormorant Garamond', 'Cinzel', serif;
+}
+
+.font-serif-body {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f1de 40%, #e5c158 80%, #c5a059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-brass-glow {
+  border: 1px solid rgba(229, 193, 88, 0.6);
+  box-shadow: 0 0 25px rgba(229, 193, 88, 0.25);
+}
+
+.parchment-card {
+  background-color: #ebdcb9;
+  color: #1c150c;
+  border-radius: 1rem;
+  border: 1px solid #c8b793;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.nautical-card {
+  background: rgba(11, 26, 45, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #060d19;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c1d11;
+  border: 1px solid #c5a059;
+  border-radius: 4px;
+}
+

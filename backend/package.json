@@ -1,0 +1,40 @@
+{
+  "name": "careeriq-backend",
+  "version": "1.0.0",
+  "description": "CareerIQ Backend API - Sail Towards Opportunity",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "py -m uvicorn app.main:app --host 0.0.0.0 --port 5000",
+    "dev": "py -m uvicorn app.main:app --reload --host 0.0.0.0 --port 5000",
+    "test": "py -m pytest"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "pino": "^9.3.1",
+    "pino-pretty": "^11.2.2",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.14.10",
+    "@types/supertest": "^6.0.2",
+    "@types/swagger-ui-express": "^4.1.6",
+    "@types/yamljs": "^0.2.34",
+    "supertest": "^7.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.2"
+  }
+}
